@@ -1,6 +1,6 @@
 import gintro/gdk except Window
 import gintro/pango
-import gintro/[gtk, glib, gobject, vte]
+import gintro/[gtk, glib, gobject, vte ]
 import strformat
 import os
 #var cmd: array[2, cstring] = ["/bin/bash".cstring, cast[cstring](0)]
@@ -61,23 +61,25 @@ proc key_press_ALTF4(win: Window;event :Event ): bool =
 
 proc  init_Terminal() =
   var font_terminal : string                            #  resize  title  font
-  if width() <= int32(1600) and height()  >= int32(1024) :  
+
+  # size default 
+  var scrn = getDefaultScreen()
+  ROW  = 132
+  NROW = 32
+  
+  # seach max size 
+  if getWidth(scrn) <= int32(1600) and getHeight(scrn)  >= int32(1024) :  
     font_terminal = fmt"{VTEFONT} 13" #  généralement 13"... 15"
     ROW  = 132
     NROW = 32
-  if width() <= int32(1920) and height()  >= int32(1080) :  
+  if getWidth(scrn) <= int32(1920) and getHeight(scrn)  >= int32(1080) :  
     font_terminal = fmt"{VTEFONT} 15" #  généralement 17"... 22"
     ROW  = 152
     NROW = 42
-  if width() > int32(1920)  :  
+  if getWidth(scrn) > int32(1920)  :  
     font_terminal = fmt"{VTEFONT} 18" #  ex: 2560 x1600 => 27"
     ROW  = 172
     NROW = 52
-
-
-  # application 
-  ROW  = 132
-  NROW = 42
 
 
   terminal.setSize( ROW, NROW)                          #  size du terminal
@@ -117,7 +119,7 @@ proc newApp() =
 
 
 
-  let envPath = "/home/soleil/NimPath/"
+  let envPath = getAppDir()
 
   let argument = commandLineParams()
   var vPROG : string = $argument[0]

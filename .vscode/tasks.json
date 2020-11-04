@@ -132,6 +132,16 @@
           "reveal": "never",
           "focus": true 
       }
+    },   {
+      "label": "A-GTKVTE",
+      "type": "shell",
+      "command": "$HOME/termvte ${fileDirname}/${fileBasenameNoExtension}",
+      "problemMatcher": [],
+      "presentation": {
+        "echo": true,
+        "reveal": "never",
+        "focus": true 
+      }
     }
   ]
 }

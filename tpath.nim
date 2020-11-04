@@ -16,8 +16,7 @@ proc main() =
         break
 
       of TKey.F12:
-
-
+     
         gotoXY(1,1)
         writeStyled("getEnv USER :")
 
@@ -67,10 +66,13 @@ proc main() =
         gotoXY(18,20)
         writeStyled($commandLineParams())
 
+        gotoXY(19,1)
+        writeStyled("getAppDir() :")
+        
+        gotoXY(19,20)
+        writeStyled($getAppDir())
+
+        
       else: discard
-
-
-
-
 main()
 closeScren()
