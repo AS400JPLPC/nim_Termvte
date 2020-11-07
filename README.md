@@ -27,26 +27,4 @@ tank you github for exemple open-source for etude<br />
 **termvte NIM = repository VTETERM C/C++**<br /><br />
 
 **A terminal made for applications in a terminal / console -> "termvte"**<br />
-**A "Shell" terminal to test applications or other commands -> "termcmd"**<br />
-
-
-<br>
-contrôle :  is programme  , is directorie , is exsite  possible extend ex: contrôle autorisation voir stat Linux<br />
-
-lib : libvte3 GTK3 <br />
--------------------------------------------------------<br />
-<br />
-
-possibility resize columns and rows<br />
-possibility to change the name of the terminal<br />
-possibility to contrôle ALT_F4<br />
-
-call programme type xterm 
-<br />
-<br />
-<br />
-exemple:<br />
-	$HOME/.../termvte <br />
-OR<br>
-    $HOME/.../vteTerm  $HOME/.../test-->(use nim)<br />
-
+** Use ./termvte $HOME/.../app
