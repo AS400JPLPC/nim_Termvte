@@ -1,6 +1,7 @@
 import gintro/gdk except Window
 import gintro/pango
-import gintro/[gtk, glib, gobject, vte ]
+import gintro/glib except getCurrentDir
+import gintro/[gtk , gobject, vte ]
 import strformat
 import os
 #var cmd: array[2, cstring] = ["/bin/bash".cstring, cast[cstring](0)]
@@ -15,8 +16,7 @@ var ROW : Natural  # the desired number of columns
 var NROW : Natural # the desired number of lines
 let VTENAME : string = "VTE-TERM3270"
 
-let VTEFONT : string = "DejaVu Sans Mono"
-
+let VTEFONT : string = "Monospace Regular"
 proc app_exit(win: Window) = mainQuit()
 
 proc exit_terminal(widget: Terminal, status: int) = quit(0)
@@ -118,11 +118,12 @@ proc newApp() =
   window.setDeletable(false)
 
 
-
-  let envPath = getAppDir()
+  # var env lanceur 
+  let envPath = fmt"{getCurrentDir()}"
 
   let argument = commandLineParams()
-  var vPROG : string = $argument[0]
+  var vPROG : string = fmt"{envPath}/{$argument[0]}"
+
   var argv: seq[string]
   argv.add(vPROG)
   for i in 1 .. paramCount()-1 :

@@ -27,4 +27,14 @@ tank you github for exemple open-source for etude<br />
 **termvte NIM = repository VTETERM C/C++**<br /><br />
 
 **A terminal made for applications in a terminal / console -> "termvte"**<br />
-** Use ./termvte $HOME/.../app
+** Use ./termvte app
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=TermVTE
+Comment=
+Exec=/home/..../termvte app
+Icon=catfish
+Path=/home/..../Path_app
+Terminal=false
+StartupNotify=false
