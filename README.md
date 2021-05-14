@@ -24,6 +24,9 @@ https://vincent.bernat.im/fr/blog/2017-ecrire-emulateur-terminal<br />
 tank you github for exemple open-source for etude<br />
 
 
+&rarr;&nbsp; 2021-05-14   correction spawnSync <BR />  
+
+
 **termvte NIM = repository VTETERM C/C++**<br /><br />
 
 **A terminal made for applications in a terminal / console -> "termvte"**<br />
