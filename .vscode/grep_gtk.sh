@@ -9,7 +9,7 @@ f_dsply(){
 	echo -en '\033[0;0m'
 }
 
-f_read() {	
+f_read() {
 	echo -en '\033[0;0m'
 	echo -en $fdBlanc$fcNoir
 	read
@@ -38,12 +38,10 @@ while [ "$requete" == "?" ]; do
     f_clear
     requete="?"
   fi
-  
+
 
 done
 requete=$REPLY
-grep -B2 --color=auto $requete ~/.nimble/pkgs/gintro-0.7.7/gintro/*
+grep -B2 --color=auto $requete ~/.nimble/pkgs/gintro-#head/gintro/*
 
-#json runTerminalCommand.commands
-#"xfce4-terminal --title=GREP --hold --geometry 160x20 --zoom=2 -e '/home/soleil/NIMGUI/GUISQL/grep_gtknim.sh ?*'"
 exit 0

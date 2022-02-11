@@ -1,3 +1,5 @@
 {
-  "nim.nimprettyMaxLineLen": 120
+  "editor.minimap.enabled": false,
+  "editor.wordWrapColumn": 132,
+  "editor.wordWrap": "wordWrapColumn"
 }

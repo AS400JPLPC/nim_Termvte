@@ -1,4 +1,8 @@
-# termvte programme NIM
+# programme NIM  
+<br />
+  nim >=1.6.0<br />
+  lib gnome vte-2.91<br />
+
 Terminal basic pour application semi-graphic type 5250<br />
 Jean-Pierre Laroche<br />
 projet 2018-08-08  (C) 2018   Copyright 2018  <laroche.jeanpierre@gmail.com><br />
@@ -24,20 +28,13 @@ https://vincent.bernat.im/fr/blog/2017-ecrire-emulateur-terminal<br />
 tank you github for exemple open-source for etude<br />
 
 
-&rarr;&nbsp; 2021-05-14   correction spawnSync <BR />  
+&rarr;&nbsp; 2022-02-11  exemple terminal libvte c++ 
+
+&rarr;&nbsp; 2022-02-11  projet developper avec VSCODE  
+&rarr;&nbsp; 2022-02-11  le .vscode est présent   ++  utilise "task manager"
 
 
-**termvte NIM = repository VTETERM C/C++**<br /><br />
+&rarr;&nbsp; 2022-02-11  exemple terminal and pgm Nim 
 
-**A terminal made for applications in a terminal / console -> "termvte"**<br />
-** Use ./termvte app
-[Desktop Entry]
-Version=1.0
-Type=Application
-Name=TermVTE
-Comment=
-Exec=/home/..../termvte app
-Icon=catfish
-Path=/home/..../Path_app
-Terminal=false
-StartupNotify=false
+**VTETERM C/C++**<br /><br />
+
