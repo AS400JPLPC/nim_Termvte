@@ -58,7 +58,6 @@
 /// ex:
 ///------------------------------------------
 
-#define WORKLIB		"/home/soleil/NimGen/"
 #define WORKPGM		"./test"
 
 
@@ -309,7 +308,7 @@ int main(int argc, char *argv[])
 	if (argc == 1 )  {
 		if ( false == ctrlPgm(WORKPGM))					return EXIT_FAILURE;	// contrôle file autorisation
 		if ( false == exists_File(WORKPGM) ) 			return EXIT_FAILURE;	// contrôle si programme
-		dir = WORKLIB;
+		dir = std::filesystem::path(WORKPGM).parent_path().c_str();
 		command = arg_1;
 	}
 	if (argc == 2 )  {

@@ -58,7 +58,7 @@
 /// ex:
 ///------------------------------------------
 
-#define WORKLIB		"/home/soleil/NimGen/"
+
 #define WORKPGM		"./termCombo"
 
 
@@ -306,9 +306,9 @@ int main(int argc, char *argv[])
 
 /// blocage utilisation du terminal nique pour WORKPGM
 	if (argc == 1 )  {
-		//if ( false == ctrlPgm(WORKPGM))					return EXIT_FAILURE;	// contrôle file autorisation
+		if ( false == ctrlPgm(WORKPGM))					return EXIT_FAILURE;	// contrôle file autorisation
 		if ( false == exists_File(WORKPGM) ) 			return EXIT_FAILURE;	// contrôle si programme
-		dir = WORKLIB;
+		dir = std::filesystem::path(WORKPGM).parent_path().c_str();
 		command = arg_1;
 	}
 

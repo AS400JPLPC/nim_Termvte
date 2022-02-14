@@ -31,7 +31,9 @@ tank you github for exemple open-source for etude<br />
 &rarr;&nbsp; 2022-02-11  exemple terminal libvte c++ 
 
 &rarr;&nbsp; 2022-02-11  projet developper avec VSCODE  
-&rarr;&nbsp; 2022-02-11  le .vscode est présent   ++  utilise "task manager"
+&rarr;&nbsp; 2022-02-11  le .vscode est présent   ++  extension  "task manager"  
+&rarr;&nbsp; 2022-02-14  delete const "worlib"  uniformité traitement arg_1 arg_2  
+&rarr;&nbsp; 2022-02-14  delete module TermSDA c'est mon générateur pas encore opérationel sorry   
 
 
 &rarr;&nbsp; 2022-02-11  exemple terminal and pgm Nim 
