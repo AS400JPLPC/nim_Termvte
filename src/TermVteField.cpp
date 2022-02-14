@@ -13,16 +13,6 @@
 
 
 
-
-/// THANK YOU   MERCI BEAUCOUP
-/// thanks Mr. CHRISTOPHE BLAESS for the book development system LINUX 1..4 edition en Français
-
-/// GTK platform and GNOME for VTE-TERMINAL
-
-/// https://github.com/SgtWiggles/ume   thank you that inspired me to set up a dedicated terminal
-
-/// https://vincent.bernat.im/fr/blog/2017-ecrire-emulateur-terminal
-
 /// tank you github for exemple open-source for etude
 
 /*

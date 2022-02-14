@@ -27,6 +27,7 @@ https://vincent.bernat.im/fr/blog/2017-ecrire-emulateur-terminal<br />
 <br />
 tank you github for exemple open-source for etude<br />
 
+LINUX  
 
 &rarr;&nbsp; 2022-02-11  exemple terminal libvte c++ 
 
